@@ -1,40 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi proyecto Web</title>
-    <style>
-body {
-    background-color: beige;
-}
-
-header { 
-    background-color: aqua;
-}
-
-p {
-    color: blueviolet;
-}
-    </style>
     <link rel="stylesheet" href="style.css">
+    <style>
+        h1{
+            color: rgb(226, 29, 29);
+            font-size: 50px;
+        }
+        body {
+            background-color: rgb(247, 104, 199);
+            border: 2px solid black;
+            border-radius: 6px;
+        }
+
+        header {
+            background-color: rgb(4, 0, 255);
+            border: 2px solid black;
+            border-radius: 6px;
+        }
+
+        p {
+            color: black;
+            font-size: 18px;
+
+        }
+
+        main {
+            background-color: rgb(142, 142, 243);
+            border: 2px solid black;
+        }
+
+        h2 {
+            background-color: yellow;
+            border: 2px solid black;
+            border-radius: 6px;
+            color: black;
+        }
+        #contacto{
+            background-color:rgb(151, 235, 151);
+            border-radius: 2px solid black;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+    </style>
+
 
 
 </head>
+
 <body>
-    <header>
-    <h1>Mi proyecto Web</h1>
-
-    <p>Este es un proyecto web del mes de Noviembre</p> 
-
-    <h2>Este mes hablaremos de las nuevas tecnologias</h2>
-
-    <p>Cada dia nuevas apps para tener mas acceso a todo desde todas partes</p>
-
     <div>
+        <header>
+            <h1>Mi proyecto Web</h1>
 
+            <p>Este es un proyecto web del mes de Noviembre</p>
+
+
+        </header>
+        <main>
+            <h2>Que me gusta</h2>
+            <section id="preferencias-personales">
+
+                <ul>
+                    <li>Viajar</li>
+                    <li>Pasear por el campo.</li>
+                    <li>Una buena comida con amigos</li>
+                </ul>
+
+            </section>
+
+            <h2>Este mes hablaremos de las nuevas tecnologias</h2>
+
+            <p>Cada dia nuevas apps para tener mas acceso a todo desde todas partes</p>
+
+            <section id="contacto">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre"> <br>
+                <label for="correo">Correo Electronico</label>
+                <input type="text" id="correo"><br>
+                <input type="textarea" id="text" placeholder="Escribe aqui"><br>
+
+                <input type="submit" value="Enviar">
+
+            </section>
+        </main>
+        <footer>
+            <p> &copy; 2025 Todos los derechos</p>
+        </footer>
     </div>
-
- </header>   
 </body>
+
 </html>
